@@ -1,0 +1,17 @@
+{
+  "name": "DevOps Lab Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [3000, 30080, 30081, 8080, 8081, 9090, 5000, 6379, 3306],
+  "postCreateCommand": "./.devcontainer/post-create.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
+}
